@@ -44,12 +44,6 @@ This project project was built following the specifications , and user cases giv
 
 <img width="400" src="./app/assets/images/home.png"><span> </span><img width="400" src="./app/assets/images/article.png">
 <br>
-<img width="400" src="./app/assets/images/categories.png"><span> </span><img width="400" src="./app/assets/images/signup.png">
-<br>
-<img width="400" src="./app/assets/images/user_profile.png"><span> </span><img width="400" src="./app/assets/images/add_article.png">
-<br>
-<img width="400" src="./app/assets/images/dashboard.png"><span> </span><img width="400" src="./app/assets/images/edit_category.png">
-
 ## Dependencies:
 
 Iportant Gems and dependencies used in this web application:
