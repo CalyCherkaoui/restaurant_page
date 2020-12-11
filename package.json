@@ -1,0 +1,23 @@
+{
+  "name": "restaurant_page",
+  "version": "1.0.0",
+  "description": "restaurant page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalyCherkaoui/restaurant_page.git"
+  },
+  "keywords": [
+    "restaurant",
+    "javascript"
+  ],
+  "author": "houda cherkaoui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CalyCherkaoui/restaurant_page/issues"
+  },
+  "homepage": "https://github.com/CalyCherkaoui/restaurant_page#readme"
+}
