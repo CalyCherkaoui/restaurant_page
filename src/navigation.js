@@ -1,7 +1,7 @@
 const navigation = () =>  {
   const logo = document.createElement('h1');
   logo.setAttribute('class', 'logo');
-  logo.innerHTML = 'The Avocado Studio';
+  logo.innerHTML = 'The Avocado Studio.';
   const navigationList = document.createElement('div');
   navigationList.setAttribute('class', 'tab');
 
