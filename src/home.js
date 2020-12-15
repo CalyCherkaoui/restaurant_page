@@ -1,8 +1,6 @@
-import * as assets from './variables';
-
-const home = () => {
+const home = (img) => {
   const homeDiv = document.createElement('div');
-  homeDiv.setAttribute('class', 'section_conatiner');
+  homeDiv.setAttribute('class', 'tabcontent');
   homeDiv.setAttribute('id', 'home');
 
   const heroWrapper = document.createElement('div');
@@ -12,7 +10,7 @@ const home = () => {
   heroTilWrap.setAttribute('class', 'hero_til_wrap');
   heroTilWrap.innerHTML = "<p class='hero_til_text'> Avocado Studio for Helthy gourmet experience </P>";
   
-  heroWrapper.append(heroTilWrap, assets.heroImage);
+  heroWrapper.append(heroTilWrap, img);
   homeDiv.append(heroWrapper);
   return homeDiv;
 }
