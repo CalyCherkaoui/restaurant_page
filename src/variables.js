@@ -20,55 +20,127 @@ heroImg.setAttribute('src', img0home);
 heroImg.setAttribute('class','hero_image');
 export const heroImage = heroImg;
 
-const breakfastImg = new Image();
-breakfastImg.setAttribute('src', img1breakfast);
-breakfastImg.setAttribute('class','menu_image');
-export const breakfastImage = breakfastImg;
+class Dish {
+  constructor(image, title, text, price) {
+    this.image = image;
+    this.title = title;
+    this.text = text;
+    this.price = price;
+  }
 
-const greenImg = new Image();
-greenImg.setAttribute('src', img2green);
-greenImg.setAttribute('class','menu_image');
-export const greenImage = greenImg;
+  dishElem() {
+    const dishContainer = document.createElement('div');
+    dishContainer.setAttribute('class', 'dish_container');
 
-const ceasarImg = new Image();
-ceasarImg.setAttribute('src', img3cesar);
-ceasarImg.setAttribute('class','menu_image');
-export const ceasarImage = ceasarImg;
+    const dishTexteArea = document.createElement('div');
+    dishTexteArea.setAttribute('class', 'dish_text_area');
 
-const naanImg = new Image();
-naanImg.setAttribute('src', img4naan);
-naanImg.setAttribute('class','menu_image');
-export const naanImage = naanImg;
+    const dishTitle = document.createElement('h2');
+    dishTitle.setAttribute('class', 'dish_title');
+    dishTitle.innerHTML = this.title;
 
-const pizzaImg = new Image();
-pizzaImg.setAttribute('src', img5pizza);
-pizzaImg.setAttribute('class','menu_image');
-export const pizzaImage = pizzaImg;
+    const dishText = document.createElement('p');
+    dishText.setAttribute('class', 'dish_text');
+    dishText.innerHTML = this.text;
 
-const meatImg = new Image();
-meatImg.setAttribute('src', img6meat);
-meatImg.setAttribute('class','menu_image');
-export const meatImage = meatImg;
+    const dishPrice = document.createElement('p');
+    dishPrice.setAttribute('class', 'dish_price');
+    dishPrice.innerHTML = `$ ${this.price}`;
 
-const pumkinImg = new Image();
-pumkinImg.setAttribute('src', img7pumkin);
-pumkinImg.setAttribute('class','menu_image');
-export const pumkinImage = pumkinImg;
+    dishTexteArea.append(dishTitle, dishText, dishPrice);
 
-const figuesImg = new Image();
-figuesImg.setAttribute('src', img8figues);
-figuesImg.setAttribute('class','menu_image');
-export const figuesImage = figuesImg;
+    const ImgElem = new Image();
+    ImgElem.setAttribute('src', this.image);
+    ImgElem.setAttribute('class','menu_image');
 
-const chocoImg = new Image();
-chocoImg.setAttribute('src', img9choco);
-chocoImg.setAttribute('class','menu_image');
-export const chocoImage = chocoImg;
+    dishContainer.append(ImgElem, dishTexteArea);
 
-const yughurtImg = new Image();
-yughurtImg.setAttribute('src', img10yughurt);
-yughurtImg.setAttribute('class','menu_image');
-export const yughurtImage = yughurtImg;
+    return dishContainer;
+  }
+}
+
+const dishList = [];
+
+let dish1 = new Dish(
+                        img1breakfast, 
+                        'Breakfast for Two!',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit urna.',
+                        '16.00');
+dishList.push(dish1.dishElem());
+
+// const dish2 = new Dish(
+//                         img2green,
+//                         'Green Harmony.',
+//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+//                         '08.00'
+//                         );
+// dishList.push(dish2.dishElem());
+
+// const dish3 = new Dish(
+//                         img3cesar,
+//                         'Ave Caesar!',
+//                         "Give to Caesar what is Caesar's, and to God what is God's.",
+//                         '20.00'
+//                         );
+// dishList.push(dish3.dishElem());
+
+// const dish4 = new Dish(
+//                         img4naan,
+//                         'A Rajasthani Story.',
+//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+//                         '30.00'
+//                         );
+// dishList.push(dish4.dishElem());
+
+// const dish5 = new Dish(
+//                         img5pizza,
+//                         "All'italiana!",
+//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+//                         '18.00'
+//                         );
+// dishList.push(dish5.dishElem());
+
+// const dish6 = new Dish(
+//                         img6meat,
+//                         'Nice to Meat You!',
+//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+//                         '20.00'
+//                         );
+// dishList.push(dish6.dishElem());
+
+// const dish7 = new Dish(
+//                         img7pumkin,
+//                         "Smashing Pumkins.",
+//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+//                         '12.00'
+//                         );
+// dishList.push(dish7.dishElem());
+
+// const dish8 = new Dish(
+//                         img8figues,
+//                         'September harvest!',
+//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+//                         '12.00'
+//                         );
+// dishList.push(dish8.dishElem());
+
+// const dish9 = new Dish(
+//                         img9choco,
+//                         'Serotonin Booster!',
+//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+//                         '10.00'
+//                         );
+// dishList.push(dish9.dishElem());
+
+// const dish10 = new Dish(
+//                         img10yughurt,
+//                         'Hellenic delight!',
+//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+//                         '9.00'
+//                         );
+// dishList.push(dish10.dishElem());
+
+export const dishes = dishList;
 
 const socialMedia = [];
 
