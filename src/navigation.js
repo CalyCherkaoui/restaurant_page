@@ -1,34 +1,36 @@
-const navbar = document.createElement('nav');
+const navigation = () =>  {
+  const logo = document.createElement('h1');
+  logo.setAttribute('class', 'logo');
+  logo.innerHTML = 'The Avocado Studio';
+  const navigationList = document.createElement('div');
+  navigationList.setAttribute('class', 'tab');
 
-const logo = document.createElement('h1');
-logo.setAttribute('class', 'logo');
-logo.innerHTML = 'The Avocado Studio';
-export const brand = logo;
+  const navigationElemHome = document.createElement('button');
+  navigationElemHome.setAttribute('class', 'tablinks');
+  navigationElemHome.setAttribute('value', 'home');
+  navigationElemHome.innerHTML = "Home";
+  // navigationElemHome.addEventListener('click', openTab(e));
 
-const navigationList = document.createElement('ul');
+  const navigationElemMenu = document.createElement('button');
+  navigationElemMenu.setAttribute('class', 'tablinks');
+  navigationElemMenu.setAttribute('value', 'menu');
+  navigationElemMenu.innerHTML = "Menu";
+  // navigationElemMenu.addEventListener('click', openTab(e));
 
-const navigationElemMenu = document.createElement('li');
-navigationElemMenu.setAttribute('id', 'menu');
-navigationElemMenu.setAttribute('class', 'nav_element');
-navigationElemMenu.innerHTML = "<button class='btn_tab'>Home</button>";
+  const navigationElemContact = document.createElement('button');
+  navigationElemContact.setAttribute('class', 'tablinks');
+  navigationElemContact.setAttribute('value', 'contact');
+  navigationElemContact.innerHTML = "Contact-us";
+  // navigationElemContact.addEventListener('click', openTab(e));
 
-export const navMenu = navigationElemMenu;
+  navigationList.append(navigationElemHome, navigationElemMenu);
 
-const navigationElemAbout = document.createElement('li');
-navigationElemAbout.setAttribute('id', 'about');
-navigationElemAbout.setAttribute('class', 'nav_element');
-navigationElemAbout.innerHTML = "<button class='btn_tab'>Menu</button>";
+  const navWrapper = document.createElement('div');
+  navWrapper.setAttribute('id', 'nav_wrapper');
+  navWrapper.append(logo, navigationList);
 
-export const navAbout = navigationElemAbout;
+  return navWrapper;
+}
 
-const navigationElemContact = document.createElement('li');
-navigationElemContact.setAttribute('id', 'Contact');
-navigationElemContact.setAttribute('class', 'nav_element');
-navigationElemContact.innerHTML = "<button class='btn_tab'>Contact-us</button>";
-
-export const navContact = navigationElemContact;
-
-navigationList.append(navigationElemMenu, navigationElemAbout, navigationElemContact);
-
-export const navList = navigationList;
+export default navigation;
 
