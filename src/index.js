@@ -3,9 +3,10 @@ import * as assets from './variables';
 import navigation from './navigation';
 import home from './home';
 import menu from './menu';
+import contact from './contact';
 
 const globalContainer = document.querySelector('#content');
-globalContainer.append(navigation(), home(assets.heroImage), menu(assets.dishes));
+globalContainer.append(navigation(), home(assets.heroImage), menu(assets.dishes), contact(assets.followUs));
 
 function openTab(e) {
   let i, tabcontent, tablinks;

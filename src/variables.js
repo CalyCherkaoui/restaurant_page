@@ -144,24 +144,36 @@ export const dishes = dishList;
 
 const socialMedia = [];
 
-const facebook = new Image();
-facebook.setAttribute('src', iconFacebook);
-facebook.setAttribute('class','social_icon');
+const facebook = document.createElement('a');
+facebook.setAttribute('href', 'https://www.facebook.com/houdacherkaouicalypso');
+const facebookImg = new Image();
+facebookImg.setAttribute('src', iconFacebook);
+facebookImg.setAttribute('class','social_icon');
+facebook.append(facebookImg);
 socialMedia.push(facebook);
 
-const twitter = new Image();
-twitter.setAttribute('src', iconTwitter);
-twitter.setAttribute('class','social_icon');
+const twitter = document.createElement('a');
+twitter.setAttribute('href', 'https://twitter.com/Houda59579688');
+const twitterImg = new Image();
+twitterImg.setAttribute('src', iconTwitter);
+twitterImg.setAttribute('class','social_icon');
+twitter.append(twitterImg);
 socialMedia.push(twitter);
 
-const instagram = new Image();
-instagram.setAttribute('src', iconInsta);
-instagram.setAttribute('class','social_icon');
+const instagram = document.createElement('a');
+instagram.setAttribute('href', 'https://www.instagram.com/caly_cher');
+const instagramImg = new Image();
+instagramImg.setAttribute('src', iconInsta);
+instagramImg.setAttribute('class','social_icon');
+instagram.append(instagramImg);
 socialMedia.push(instagram);
 
-const linkedin = new Image();
-linkedin.setAttribute('src', iconLinkedin);
-linkedin.setAttribute('class','social_icon');
+const linkedin = document.createElement('a');
+linkedin.setAttribute('href', 'http://www.linkedin.com/in/houda-cherkaoui-64106395/');
+const linkedinImg = new Image();
+linkedinImg.setAttribute('src', iconLinkedin);
+linkedinImg.setAttribute('class','social_icon');
+linkedin.append(linkedinImg);
 socialMedia.push(linkedin);
 
 export const followUs = socialMedia;

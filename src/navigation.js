@@ -23,7 +23,7 @@ const navigation = () =>  {
   navigationElemContact.innerHTML = "Contact-us";
   // navigationElemContact.addEventListener('click', openTab(e));
 
-  navigationList.append(navigationElemHome, navigationElemMenu);
+  navigationList.append(navigationElemHome, navigationElemMenu, navigationElemContact);
 
   const navWrapper = document.createElement('div');
   navWrapper.setAttribute('id', 'nav_wrapper');
