@@ -1,4 +1,42 @@
 #nav_wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+}
+
+.tab button {
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  border-bottom: 3px solid green;
+}
+
+.tab button.active {
+  border-bottom: 3px solid green;
+}
+
+.tabcontent {
+  display: none;
+  animation: fadeEffect 1s;
+}
+
+/* Go from zero to full opacity */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
