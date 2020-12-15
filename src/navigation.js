@@ -10,21 +10,21 @@ const navigationList = document.createElement('ul');
 const navigationElemMenu = document.createElement('li');
 navigationElemMenu.setAttribute('id', 'menu');
 navigationElemMenu.setAttribute('class', 'nav_element');
-navigationElemMenu.innerHTML = 'Menu';
+navigationElemMenu.innerHTML = "<button class='btn_tab'>Home</button>";
 
 export const navMenu = navigationElemMenu;
 
 const navigationElemAbout = document.createElement('li');
 navigationElemAbout.setAttribute('id', 'about');
 navigationElemAbout.setAttribute('class', 'nav_element');
-navigationElemAbout.innerHTML = 'About';
+navigationElemAbout.innerHTML = "<button class='btn_tab'>Menu</button>";
 
 export const navAbout = navigationElemAbout;
 
 const navigationElemContact = document.createElement('li');
 navigationElemContact.setAttribute('id', 'Contact');
 navigationElemContact.setAttribute('class', 'nav_element');
-navigationElemContact.innerHTML = 'Contact';
+navigationElemContact.innerHTML = "<button class='btn_tab'>Contact-us</button>";
 
 export const navContact = navigationElemContact;
 
