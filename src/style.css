@@ -22,6 +22,13 @@
   line-height: 2;
 }
 
+.logo span {
+  font-family: 'Ultra', serif, Arial;
+  font-size: 1.8rem;
+  color: #fca311;
+  line-height: 2;
+}
+
 .tab {
   display: flex;
   flex-direction: row;
@@ -41,10 +48,9 @@
   color: #03045e;
 }
 
-.tab button:hover {
+.tablinks:hover {
   border-bottom: 3px solid #fca311;
   color: #fca311;
-  animation: fadeEffect 1s;
 }
 
 .tab button.active {
@@ -53,7 +59,7 @@
 
 .tabcontent {
   display: none;
-  /* animation: fadeEffect 1s; */
+  animation: fadeEffect 1s;
 }
 
 /* Go from zero to full opacity */
@@ -69,6 +75,7 @@
 
 #home {
   padding: 0.5rem;
+  overflow: hidden;
 }
 
 .heroWrapper {
@@ -90,7 +97,6 @@
 
 .hero_til_text {
   font-size: 3rem;
-  /* font-family: 'Raleway', sans-serif; */
   font-weight: 900;
   color: white;
   text-transform: uppercase;
@@ -106,6 +112,11 @@
   object-position: center;
   -o-object-fit: cover;
   -o-object-position: center;
+}
+
+#menu {
+  min-height: 90vh;
+  overflow: hidden;
 }
 
 .dish_container {
@@ -150,6 +161,7 @@
 
 #contact {
   height: 90vh;
+  overflow: hidden;
 }
 
 .grid_contact {

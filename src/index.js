@@ -28,6 +28,7 @@ function openTab(e) {
 
 const tabElms = document.querySelectorAll('.tablinks');
 for(let i = 0; i < tabElms.length; i++) {
+  console.log(tabElms[i]);
   tabElms[i].addEventListener('click', openTab);
 }
 

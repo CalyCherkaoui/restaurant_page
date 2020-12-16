@@ -85,21 +85,21 @@ const dish5 = new Dish(
                         );
 dishList.push(dish5.dishElem());
 
-const dish6 = new Dish(
-                        img6meat,
-                        'Nice to Meat You!',
-                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-                        '20.00'
-                        );
-dishList.push(dish6.dishElem());
+// const dish6 = new Dish(
+//                         img6meat,
+//                         'Nice to Meat You!',
+//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+//                         '20.00'
+//                         );
+// dishList.push(dish6.dishElem());
 
-const dish7 = new Dish(
-                        img7pumkin,
-                        "Smashing Pumkins.",
-                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-                        '12.00'
-                        );
-dishList.push(dish7.dishElem());
+// const dish7 = new Dish(
+//                         img7pumkin,
+//                         "Smashing Pumkins.",
+//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+//                         '12.00'
+//                         );
+// dishList.push(dish7.dishElem());
 
 // const dish8 = new Dish(
 //                         img8figues,
@@ -148,7 +148,7 @@ twitter.append(twitterImg);
 socialMedia.push(twitter);
 
 const instagram = document.createElement('a');
-instagram.setAttribute('href', '#');
+// instagram.setAttribute('href', '#');
 // instagram.setAttribute('href', 'https://www.instagram.com/caly_cher');
 const instagramImg = new Image();
 instagramImg.setAttribute('src', iconInsta);
