@@ -22,13 +22,13 @@ function openTab(e) {
   }
   
   const tabName = e.currentTarget.attributes.getNamedItem('value').value;
-  console.log(tabName);
   document.getElementById(tabName).style.display = "block";
   e.currentTarget.className += " active";
 };
 
 const tabElms = document.querySelectorAll('.tablinks');
-console.log(tabElms);
 for(let i = 0; i < tabElms.length; i++) {
   tabElms[i].addEventListener('click', openTab);
 }
+
+document.getElementById('home').style.display = "block";

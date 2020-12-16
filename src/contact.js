@@ -3,10 +3,14 @@ const contact = (list) => {
   contactDiv.setAttribute('class', 'tabcontent');
   contactDiv.setAttribute('id', 'contact');
 
+  const contactWrapper = document.createElement('div');
+  contactWrapper.setAttribute('class', 'grid_contact');
+
   const contactTextArea = document.createElement('div');
   contactTextArea.setAttribute('class', 'contact_text_area');
 
   const contactTitle = document.createElement('h2');
+  contactTitle.setAttribute('class', 'contact_title');
   contactTitle.innerHTML = 'Get in touch';
 
   const contactAdressCont = document.createElement('div');
@@ -47,6 +51,7 @@ const contact = (list) => {
   contactSocialArea.setAttribute('class', 'contact_social_area');
   const socialMediaT = document.createElement('h3');
   socialMediaT.setAttribute('class', 'contact_elem_title');
+  socialMediaT.innerHTML = 'Follow us:'
   const socialMediaWrap = document.createElement('ul');
   socialMediaWrap.setAttribute('class', 'social_media_wrap');
   for(let i = 0; i < list.length; i++ ) {
@@ -60,9 +65,10 @@ const contact = (list) => {
 
   const contactMapArea  = document.createElement('div');
   contactMapArea.setAttribute('class', 'contact_map_area');
-  contactMapArea.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21970.241929210686!2d135.8036541289105!3d35.05933909911707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010a26bf288311%3A0xe255a69c5e4cefef!2sMount%20Hiei!5e0!3m2!1sen!2sma!4v1608067838235!5m2!1sen!2sma" width="800" height="800" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
+  contactMapArea.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52247.16561858881!2d135.80677966237747!3d35.070541234937274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010a26bf288311%3A0xe255a69c5e4cefef!2sMount%20Hiei!5e0!3m2!1sen!2sma!4v1608082885428!5m2!1sen!2sma" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
 
-  contactDiv.append(contactTextArea, contactSocialArea, contactMapArea);
+  contactWrapper.append(contactTextArea, contactSocialArea, contactMapArea);
+  contactDiv.append(contactWrapper);
 
   return contactDiv;
 }
