@@ -85,45 +85,45 @@ const dish5 = new Dish(
                         );
 dishList.push(dish5.dishElem());
 
-// const dish6 = new Dish(
-//                         img6meat,
-//                         'Nice to Meat You!',
-//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-//                         '20.00'
-//                         );
-// dishList.push(dish6.dishElem());
+const dish6 = new Dish(
+                        img6meat,
+                        'Nice to Meat You!',
+                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+                        '20.00'
+                        );
+dishList.push(dish6.dishElem());
 
-// const dish7 = new Dish(
-//                         img7pumkin,
-//                         "Smashing Pumkins.",
-//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-//                         '12.00'
-//                         );
-// dishList.push(dish7.dishElem());
+const dish7 = new Dish(
+                        img7pumkin,
+                        "Smashing Pumkins.",
+                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+                        '12.00'
+                        );
+dishList.push(dish7.dishElem());
 
-// const dish8 = new Dish(
-//                         img8figues,
-//                         'September harvest!',
-//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-//                         '12.00'
-//                         );
-// dishList.push(dish8.dishElem());
+const dish8 = new Dish(
+                        img8figues,
+                        'September harvest!',
+                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+                        '12.00'
+                        );
+dishList.push(dish8.dishElem());
 
-// const dish9 = new Dish(
-//                         img9choco,
-//                         'Serotonin Booster!',
-//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-//                         '10.00'
-//                         );
-// dishList.push(dish9.dishElem());
+const dish9 = new Dish(
+                        img9choco,
+                        'Serotonin Booster!',
+                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+                        '10.00'
+                        );
+dishList.push(dish9.dishElem());
 
-// const dish10 = new Dish(
-//                         img10yughurt,
-//                         'Hellenic delight!',
-//                         'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-//                         '9.00'
-//                         );
-// dishList.push(dish10.dishElem());
+const dish10 = new Dish(
+                        img10yughurt,
+                        'Hellenic delight!',
+                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+                        '9.00'
+                        );
+dishList.push(dish10.dishElem());
 
 export const dishes = dishList;
 
