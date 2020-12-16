@@ -37,8 +37,9 @@ This project project was built following the specifications , and user cases giv
 
 - Main views screenshots:
 <br>
-<img width="400" src="./assets/images/home.png"><span> </span><img width="400" src="./assets/images/article.png">
+<img width="400" src="./screenshots/home.png"><span> </span><img width="400" src="./screenshots/menu.png">
 <br>
+<img width="400" src="./screenshots/contact.png">
 ## Dependencies:
 
 Iportant Gems and dependencies used in this web application:
