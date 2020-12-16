@@ -33,7 +33,7 @@ This project project was built following the specifications , and user cases giv
 ## Presentation/Demo:
 
 - Video-presentation of the project
-[Demo-Live The-Avocado-studio]()
+[Demo-Live The-Avocado-studio](https://calycherkaoui.github.io/restaurant_page/)
 
 - Main views screenshots:
 <br>
