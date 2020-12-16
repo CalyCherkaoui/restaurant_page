@@ -62,7 +62,6 @@
   animation: fadeEffect 1s;
 }
 
-/* Go from zero to full opacity */
 @-webkit-keyframes fadeEffect {
   from { opacity: 0; }
   to { opacity: 1; }
