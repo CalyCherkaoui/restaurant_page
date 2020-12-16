@@ -1,10 +1,9 @@
-# Restaurant page: Ghibli Gourmet Studio
+# Restaurant page: The Avocado Studio
 
 ## About the project:
 
-In this project, I built a Restaurant page specialized in food inspired by Ghibli Studio Movies.
-This project project was built following the specifications , and user cases given by Odin Project
-
+In this project, I built a Restaurant page specialized in healty food.
+This project project was built following the specifications , and user cases given by Odin Project:
 [Read the projects specifications](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
 ## Built with:
@@ -38,7 +37,6 @@ This project project was built following the specifications , and user cases giv
 
 - Main views screenshots:
 <br>
-
 <img width="400" src="./assets/images/home.png"><span> </span><img width="400" src="./assets/images/article.png">
 <br>
 ## Dependencies:
@@ -123,7 +121,7 @@ $ git checkout development
 
 ## Deployment:
 
-This web-application was deployed with Heroku
+This web-application was deployed with github pages
 
 ## Author
 
@@ -144,7 +142,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- IMAGE CRIDITS TO GHIBLI STUDIO.
+- IMAGE CRIDITS TO https://www.pexels.com/.
 - Hat tip to [stackoverflow](https://stackoverflow.com) comunity.
 - Hat tip to [Microverse](https://www.microverse.org/) TSE for Code Review
 - Hat tip to anyone whose code was used
