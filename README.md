@@ -118,7 +118,9 @@ To get a local copy of the repository please run the following commands on your 
 ```
 $ git clone git@github.com:CalyCherkaoui/restaurant_page.git
 $ cd restaurant_page
-$ git checkout development
+$ git branch feature
+$ git checkout feature
+$ npm install
 ```
 
 ## Deployment:
