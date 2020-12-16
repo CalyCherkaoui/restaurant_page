@@ -130,8 +130,8 @@ export const dishes = dishList;
 const socialMedia = [];
 
 const facebook = document.createElement('a');
-facebook.setAttribute('href', '#');
 facebook.setAttribute('href', 'https://www.facebook.com/houdacherkaouicalypso');
+const facebookImg = new Image();
 facebookImg.setAttribute('src', iconFacebook);
 facebookImg.setAttribute('class', 'social_icon');
 facebook.append(facebookImg);
@@ -139,7 +139,6 @@ socialMedia.push(facebook);
 
 const twitter = document.createElement('a');
 twitter.setAttribute('href', 'https://twitter.com/Houda59579688');
-twitter.setAttribute('href', '#');
 const twitterImg = new Image();
 twitterImg.setAttribute('src', iconTwitter);
 twitterImg.setAttribute('class', 'social_icon');
