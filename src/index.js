@@ -11,7 +11,7 @@ globalContainer.append(navigation(),
   menu(assets.dishes),
   contact(assets.followUs));
 
-function openTab(e) {
+const openTab = (e) => {
   const tabcontent = document.getElementsByClassName('tabcontent');
   for (let i = 0; i < tabcontent.length; i += 1) {
     tabcontent[i].style.display = 'none';

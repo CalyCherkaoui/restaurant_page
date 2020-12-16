@@ -9,19 +9,16 @@ const navigation = () => {
   navigationElemHome.setAttribute('class', 'tablinks');
   navigationElemHome.setAttribute('value', 'home');
   navigationElemHome.innerHTML = 'Home';
-  // navigationElemHome.addEventListener('click', openTab(e));
 
   const navigationElemMenu = document.createElement('button');
   navigationElemMenu.setAttribute('class', 'tablinks');
   navigationElemMenu.setAttribute('value', 'menu');
   navigationElemMenu.innerHTML = 'Menu';
-  // navigationElemMenu.addEventListener('click', openTab(e));
 
   const navigationElemContact = document.createElement('button');
   navigationElemContact.setAttribute('class', 'tablinks');
   navigationElemContact.setAttribute('value', 'contact');
   navigationElemContact.innerHTML = 'Contact-us';
-  // navigationElemContact.addEventListener('click', openTab(e));
 
   navigationList.append(navigationElemHome, navigationElemMenu, navigationElemContact);
 

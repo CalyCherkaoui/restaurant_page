@@ -131,15 +131,14 @@ const socialMedia = [];
 
 const facebook = document.createElement('a');
 facebook.setAttribute('href', '#');
-// facebook.setAttribute('href', 'https://www.facebook.com/houdacherkaouicalypso');
-const facebookImg = new Image();
+facebook.setAttribute('href', 'https://www.facebook.com/houdacherkaouicalypso');
 facebookImg.setAttribute('src', iconFacebook);
 facebookImg.setAttribute('class', 'social_icon');
 facebook.append(facebookImg);
 socialMedia.push(facebook);
 
 const twitter = document.createElement('a');
-// twitter.setAttribute('href', 'https://twitter.com/Houda59579688');
+twitter.setAttribute('href', 'https://twitter.com/Houda59579688');
 twitter.setAttribute('href', '#');
 const twitterImg = new Image();
 twitterImg.setAttribute('src', iconTwitter);
@@ -148,8 +147,7 @@ twitter.append(twitterImg);
 socialMedia.push(twitter);
 
 const instagram = document.createElement('a');
-// instagram.setAttribute('href', '#');
-// instagram.setAttribute('href', 'https://www.instagram.com/caly_cher');
+instagram.setAttribute('href', 'https://www.instagram.com/caly_cher');
 const instagramImg = new Image();
 instagramImg.setAttribute('src', iconInsta);
 instagramImg.setAttribute('class', 'social_icon');
@@ -157,8 +155,7 @@ instagram.append(instagramImg);
 socialMedia.push(instagram);
 
 const linkedin = document.createElement('a');
-// linkedin.setAttribute('href', 'http://www.linkedin.com/in/houda-cherkaoui-64106395/');
-linkedin.setAttribute('href', '#');
+linkedin.setAttribute('href', 'http://www.linkedin.com/in/houda-cherkaoui-64106395/');
 const linkedinImg = new Image();
 linkedinImg.setAttribute('src', iconLinkedin);
 linkedinImg.setAttribute('class', 'social_icon');
