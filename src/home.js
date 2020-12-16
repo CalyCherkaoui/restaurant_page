@@ -9,10 +9,10 @@ const home = (img) => {
   const heroTilWrap = document.createElement('div');
   heroTilWrap.setAttribute('class', 'hero_til_wrap');
   heroTilWrap.innerHTML = "<p class='hero_til_text'> Avocado Studio for a Healthy gourmet experience.</P>";
-  
+
   heroWrapper.append(heroTilWrap, img);
   homeDiv.append(heroWrapper);
   return homeDiv;
-}
+};
 
 export default home;

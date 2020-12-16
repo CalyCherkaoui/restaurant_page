@@ -15,7 +15,7 @@ import iconLinkedin from './assets/linkedin.png';
 
 const heroImg = new Image();
 heroImg.setAttribute('src', img0home);
-heroImg.setAttribute('class','hero_image');
+heroImg.setAttribute('class', 'hero_image');
 heroImg.setAttribute('loading', 'lazy');
 export const heroImage = heroImg;
 
@@ -51,7 +51,7 @@ class Dish {
     const ImgElem = new Image();
     ImgElem.setAttribute('src', this.image);
     ImgElem.setAttribute('loading', 'lazy');
-    ImgElem.setAttribute('class','menu_image');
+    ImgElem.setAttribute('class', 'menu_image');
 
     dishContainer.append(ImgElem, dishTexteArea);
 
@@ -62,67 +62,67 @@ class Dish {
 const dishList = [];
 
 const dish3 = new Dish(
-                        img3cesar,
-                        'Ave Caesar!',
-                        "Give to Caesar what is Caesar's, and to God what is God's. Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.",
-                        '20.00'
-                        );
+  img3cesar,
+  'Ave Caesar!',
+  "Give to Caesar what is Caesar's, and to God what is God's. Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.",
+  '20.00',
+);
 dishList.push(dish3.dishElem());
 
 const dish4 = new Dish(
-                        img4naan,
-                        'A Rajasthani Story.',
-                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-                        '30.00'
-                        );
+  img4naan,
+  'A Rajasthani Story.',
+  'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+  '30.00',
+);
 dishList.push(dish4.dishElem());
 
 const dish5 = new Dish(
-                        img5pizza,
-                        "All'italiana!",
-                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-                        '18.00'
-                        );
+  img5pizza,
+  "All'italiana!",
+  'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+  '18.00',
+);
 dishList.push(dish5.dishElem());
 
 const dish6 = new Dish(
-                        img6meat,
-                        'Nice to Meat You!',
-                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-                        '20.00'
-                        );
+  img6meat,
+  'Nice to Meat You!',
+  'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+  '20.00',
+);
 dishList.push(dish6.dishElem());
 
 const dish7 = new Dish(
-                        img7pumkin,
-                        "Smashing Pumkins.",
-                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-                        '12.00'
-                        );
+  img7pumkin,
+  'Smashing Pumkins.',
+  'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+  '12.00',
+);
 dishList.push(dish7.dishElem());
 
 const dish8 = new Dish(
-                        img8figues,
-                        'September harvest!',
-                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-                        '12.00'
-                        );
+  img8figues,
+  'September harvest!',
+  'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+  '12.00',
+);
 dishList.push(dish8.dishElem());
 
 const dish9 = new Dish(
-                        img9choco,
-                        'Serotonin Booster!',
-                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-                        '10.00'
-                        );
+  img9choco,
+  'Serotonin Booster!',
+  'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+  '10.00',
+);
 dishList.push(dish9.dishElem());
 
 const dish10 = new Dish(
-                        img10yughurt,
-                        'Hellenic delight!',
-                        'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
-                        '9.00'
-                        );
+  img10yughurt,
+  'Hellenic delight!',
+  'Integer vestibulum eros iaculis magna auctor, in sollicitudin tellus ultricies.',
+  '9.00',
+);
 dishList.push(dish10.dishElem());
 
 export const dishes = dishList;
@@ -134,7 +134,7 @@ facebook.setAttribute('href', '#');
 // facebook.setAttribute('href', 'https://www.facebook.com/houdacherkaouicalypso');
 const facebookImg = new Image();
 facebookImg.setAttribute('src', iconFacebook);
-facebookImg.setAttribute('class','social_icon');
+facebookImg.setAttribute('class', 'social_icon');
 facebook.append(facebookImg);
 socialMedia.push(facebook);
 
@@ -143,7 +143,7 @@ const twitter = document.createElement('a');
 twitter.setAttribute('href', '#');
 const twitterImg = new Image();
 twitterImg.setAttribute('src', iconTwitter);
-twitterImg.setAttribute('class','social_icon');
+twitterImg.setAttribute('class', 'social_icon');
 twitter.append(twitterImg);
 socialMedia.push(twitter);
 
@@ -152,7 +152,7 @@ const instagram = document.createElement('a');
 // instagram.setAttribute('href', 'https://www.instagram.com/caly_cher');
 const instagramImg = new Image();
 instagramImg.setAttribute('src', iconInsta);
-instagramImg.setAttribute('class','social_icon');
+instagramImg.setAttribute('class', 'social_icon');
 instagram.append(instagramImg);
 socialMedia.push(instagram);
 
@@ -161,7 +161,7 @@ const linkedin = document.createElement('a');
 linkedin.setAttribute('href', '#');
 const linkedinImg = new Image();
 linkedinImg.setAttribute('src', iconLinkedin);
-linkedinImg.setAttribute('class','social_icon');
+linkedinImg.setAttribute('class', 'social_icon');
 linkedin.append(linkedinImg);
 socialMedia.push(linkedin);
 

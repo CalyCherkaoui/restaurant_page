@@ -64,13 +64,13 @@
 
 /* Go from zero to full opacity */
 @-webkit-keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 #home {
@@ -170,9 +170,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3fr 1fr;
-  grid-template-areas: 
-      "text map"
-      "social map";
+  grid-template-areas:
+    "text map"
+    "social map";
 }
 
 .contact_text_area {
@@ -234,15 +234,8 @@
   margin-right: 0.5rem;
 }
 
-.contact_social_link a {
-  height: fit-content;
-  width: fit-content;
-}
-
 .contact_social_link a:hover {
   background-color: #fca311;
-  height: fit-content;
-  width: fit-content;
 }
 
 .contact_map_area iframe {

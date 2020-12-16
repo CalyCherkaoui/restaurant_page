@@ -3,10 +3,10 @@ const menu = (list) => {
   menuDiv.setAttribute('class', 'tabcontent');
   menuDiv.setAttribute('id', 'menu');
 
-  for(let i = 0; i < list.length; i++) {
+  for (let i = 0; i < list.length; i += 1) {
     menuDiv.append(list[i]);
   }
   return menuDiv;
-}
+};
 
 export default menu;
