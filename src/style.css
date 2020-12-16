@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+}
+
+#nav_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.logo {
+  font-family: 'Ultra', serif, Arial;
+  font-size: 1.8rem;
+  color: #14213d;
+  line-height: 2;
+}
+
+.logo span {
+  font-family: 'Ultra', serif, Arial;
+  font-size: 1.8rem;
+  color: #fca311;
+  line-height: 2;
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+}
+
+.tab button {
+  padding: 0.2rem 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #03045e;
+}
+
+.tablinks:hover {
+  border-bottom: 3px solid #fca311;
+  color: #fca311;
+}
+
+.tab button.active {
+  border-bottom: 3px solid #fca311;
+}
+
+.tabcontent {
+  display: none;
+  animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#home {
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.heroWrapper {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_til_wrap {
+  width: 40%;
+  padding: 4rem;
+  background-color: rgba(43, 37, 6, 0.38);
+  z-index: 10;
+}
+
+.hero_til_text {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero_image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  -o-object-fit: cover;
+  -o-object-position: center;
+}
+
+#menu {
+  min-height: 90vh;
+  overflow: hidden;
+}
+
+.dish_container {
+  width: 100%;
+  height: 70vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu_image {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  -o-object-fit: cover;
+  -o-object-position: center;
+}
+
+.dish_text_area {
+  padding: 20%;
+  align-self: center;
+}
+
+.dish_title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2rem;
+  color: #14213d;
+  margin-bottom: 1rem;
+}
+
+.dish_text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  color: #14213d;
+}
+
+.dish_price {
+  text-align: end;
+  color: #fca311;
+  font-weight: 700;
+}
+
+#contact {
+  height: 90vh;
+  overflow: hidden;
+}
+
+.grid_contact {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+    "text map"
+    "social map";
+}
+
+.contact_text_area {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.contact_social_area {
+  grid-area: social;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.contact_map_area {
+  grid-area: map;
+}
+
+.social_icon {
+  width: 2.5rem;
+}
+
+.contact_title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2rem;
+  color: #14213d;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.contact_elem_wrap {
+  margin-bottom: 1.5rem;
+}
+
+.contact_elem_title {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.contact_elem_value {
+  font-family: 'Raleway', sans-serif;
+  color: #14213d;
+  text-decoration: none;
+}
+
+.social_media_wrap {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact_social_link {
+  margin-right: 0.5rem;
+}
+
+.contact_social_link a:hover {
+  background-color: #fca311;
+}
+
+.contact_map_area iframe {
+  height: 100%;
+  width: 100%;
+}
