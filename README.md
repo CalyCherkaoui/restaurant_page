@@ -146,7 +146,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- IMAGE CRIDITS TO https://www.pexels.com/.
+- IMAGE CREDITS TO https://www.pexels.com/.
 - Hat tip to [stackoverflow](https://stackoverflow.com) comunity.
 - Hat tip to [Microverse](https://www.microverse.org/) TSE for Code Review
 - Hat tip to anyone whose code was used
