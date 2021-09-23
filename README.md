@@ -6,6 +6,10 @@ In this project, I built a Restaurant page specialized in healty food.
 This project project was built following the specifications , and user cases given by Odin Project:
 [Read the projects specifications](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
+### Main features:
+- It provides a navigation through the App components.
+-	It displays dynamically a landing page, meals' menu, and contact information components.
+
 ## Built with:
 
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img width="5%" src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="Javascript"></a>
